@@ -1,0 +1,61 @@
+<!--
+  Generated template for the SignupPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Sign Up</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+    <ion-label stacked>Name</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Email ID</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Phone Number</ion-label>
+    <ion-input type="number"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label stacked>Password</ion-label>
+    <ion-icon style="color:red" name="ios-lock"></ion-icon>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+  <br />
+  <br />
+  <div style="display:flex; justify-content:center; align-items:center; align-content:center;flex-direction: column">
+
+    <button ion-button round style="font-style:bold">signup</button>
+  </div>
+
+  <p style="text-align:center"> By creating an account, you agree our <a>Terms</a></p>
+  <p style="text-align:center"> Already have an account, <a (click)="login">Sign in</a></p>
+  <br />
+  <p style="text-align:center">OR</p>
+  <br />
+  <div class="blue" style="text-align:center">
+    <b style="letter-spacing: 0.04em; 
+    ">
+      <ion-icon name="logo-facebook" style="float:left"></ion-icon>
+      Continue with facebook
+    </b>
+  </div>
+  <br />
+  <div class="red" style="text-align:center">
+    <b style="letter-spacing: 0.04em; text-align: center
+    ">
+      <ion-icon name="logo-google" style="float:left"></ion-icon>Continue with google
+    </b>
+  </div>
+  <br />
+</ion-content>

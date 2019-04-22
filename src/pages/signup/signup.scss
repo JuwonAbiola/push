@@ -1,0 +1,28 @@
+page-signup {
+  .button-round-md {
+    border-radius: 64px;
+    padding: 1rem 3.6rem;
+    background: #0B2265;
+    height: 4.5rem;
+  }
+
+  .blue,
+  .red {
+    /* DS1 CARDS */
+    box-shadow: 0px 4px 6px rgba(137, 137, 137, 0.25);
+    height: 46px;
+    width: 100%;
+    padding-left: 18px;
+    padding-top: 12px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #1A426D;
+    border-radius: 10px !important;
+    margin-top: 5px;
+    letter-spacing: 4%;
+  }
+
+  .red {
+    background-color: #de473c !important;
+  }
+}

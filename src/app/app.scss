@@ -1,0 +1,261 @@
+// http://ionicframework.com/docs/theming/
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+* {
+    font-family: 'SFUIText', 'Maven Pro';
+}
+
+// font-family: 'AnenirNext' !important;
+@import '../theme/fonts';
+.back-button-md {
+    margin: 0 6px;
+    min-width: 44px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    z-index: 100000;
+}
+
+.main-bg {
+    background-image: url('../assets/img/sp.png') !important;
+    background-color: #fff !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+
+.ion-list.list {
+    background: transparent !important;
+}
+
+.bar-button-default-md {
+    color: #fff;
+}
+
+.button-md-blue {
+    padding: 25px 0 !important;
+}
+
+.normalToast {
+    .toast-message {
+        border-radius: 5.65rem !important;
+        background: color($colors, white);
+        color: color($colors, danger);
+    }
+}
+
+.button-outline-md-blue {
+    padding: 25px 0 !important;
+}
+
+.c-white {
+    color: #fff !important;
+}
+
+.c-blue {
+    color: #162e62 !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.f-15 {
+    font-size: 15px !important;
+}
+
+.f-25 {
+    font-size: 25px !important;
+}
+
+.f-20 {
+    font-size: 20px !important;
+}
+
+.transparent {
+    background: transparent !important;
+}
+
+.wrap {
+    overflow-wrap: break-word !important;
+    word-wrap: break-word;
+}
+
+.blue-bg {
+    background-color: #374699 !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.btn-bg {
+    background: #374699;
+    color: #fff;
+    border-top: 1px solid #fff !important;
+}
+
+.btn-bg1 {
+    text-align: center;
+    background: #374699;
+    color: #fff;
+    // border-radius: 100%;
+    height: 40%;
+    // margin-left: 30%;
+    margin-top: 5%;
+}
+
+.btn-bg1 img {
+    border-radius: 100%;
+    width: 40%;
+}
+
+.toolbar-title {
+    color: #374699;
+    font-weight: bold;
+}
+
+.toolbar {
+    color: #374699;
+}
+
+ion-header.header-md {
+    box-shadow: none !important;
+    border-bottom: 0px !important;
+}
+
+.flexy {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.price {
+    position: absolute;
+    right: 15%;
+    color: #2B3497;
+}
+
+.payment-info {
+    position: absolute;
+    right: 10%;
+    overflow-wrap: break-word !important;
+}
+
+.f-16 {
+    font-size: 16px !important;
+}
+
+.f-17 {
+    font-size: 17px !important;
+}
+
+.pt-10 {
+    padding-top: 10px !important;
+}
+
+.pt-15 {
+    padding-top: 15px !important;
+}
+
+.toolbar-background {
+    color: #374699;
+    background-color: #fcd403 !important;
+    box-shadow: 0px !important;
+    border-bottom: 0px !important;
+}
+
+.pt-20 {
+    padding-top: 20px !important;
+}
+
+.pt-30 {
+    padding-top: 30px !important;
+}
+
+ion-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.checkbox-checked .checkbox-inner {
+    position: absolute;
+    top: 9px;
+    left: 13px;
+    height: 22px;
+    width: 5px;
+}
+
+.splash {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fcd403;
+}
+
+.spinner {
+    margin: 100px auto 0;
+    width: 70px;
+    text-align: center;
+}
+
+.spinner>div {
+    width: 18px;
+    height: 18px;
+    background-color: #374699;
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0)
+    }
+    40% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes sk-bouncedelay {
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    40% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+}

@@ -1,0 +1,38 @@
+<div *ngIf="showSplash" class="splash">
+
+  <div class="spinner">
+    <div class="bounce1"></div>
+    <div class="bounce2"></div>
+    <div class="bounce3"></div>
+  </div>
+
+</div>
+
+<ion-menu id="myMenu" [content]="content">
+  <!-- <ion-header>
+    <ion-toolbar>
+      <ion-title><img src="assets/img/logo.svg"></ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+  <ion-content class="blue-bg">
+    <ion-list no-lines>
+      <button class="btn-bg1" style="text-align:center" menuClose ion-item (click)="openPage(im)">
+        <img [src]="im.img"> <br /><br />
+        <b>{{im.username}}</b>
+      </button>
+      <button class="btn-bg" menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        <ion-icon [name]="p.icon" item-left></ion-icon>
+        {{p.name}}
+      </button>
+    </ion-list>
+  </ion-content>
+  <ion-footer>
+    <ion-toolbar>
+      <ion-icon name="person-add" item-left color="blue"></ion-icon>
+      SIGNUP TO DELIVER
+    </ion-toolbar>
+  </ion-footer>
+</ion-menu>
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

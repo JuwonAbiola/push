@@ -1,0 +1,52 @@
+<!--
+  Generated template for the EntercardPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>Enter Card Details</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+
+        <ion-item>
+            <ion-label stacked>Enter card number</ion-label>
+            <ion-input type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label stacked>Enter name on card</ion-label>
+            <ion-input type="text"></ion-input>
+        </ion-item>
+
+        <ion-grid>
+            <ion-row>
+                <ion-col>
+                    <ion-item>
+                        <ion-label stacked>Enter CVV</ion-label>
+                        <ion-input type="text"></ion-input>
+                    </ion-item>
+                </ion-col>
+                <ion-col>
+                    <ion-item>
+                        <ion-label stacked>Enter Expiry Date</ion-label>
+                        <ion-input type="text"></ion-input>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-list>
+
+    <div style="display:flex; justify-content:center; align-items:center; align-content:center;flex-direction: column">
+
+        <button ion-button style="font-style:bold" (click)="login()">SAVE DETAILS</button>
+    </div>
+
+</ion-content>
